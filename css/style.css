@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 h1 {
     font-size: 35px;
     font-weight: bold;
@@ -11,16 +10,19 @@ h1 {
     text-align: center;
     text-shadow: 1px 1px 1px #ccc;
     margin-top: 20px;
-    margin-bottom: 10px;}
+    margin-bottom: 10px;
+}
 
 .peliculas {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 4%;
+    justify-content: center;
 }
 
 .pelicula {
     margin: 10px;
-    width: 300px;
+    width: 250px;
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
@@ -30,6 +32,19 @@ h1 {
     width: 100%;
     height: 400px;
     object-fit: cover;
+}
+
+.pelicula:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #f4eaea;
+}
+
+.pelicula {
+    transition: all 0.5s ease;
+}
+
+.pelicula {
+    box-shadow: 0 0 5px #ccc;
 }
 
 @media (max-width: 1024px) {
